@@ -1,0 +1,8 @@
+NET "S0" LOC = P15;
+NET "S1" LOC = P14;
+NET "S2" LOC = P8;
+NET "S3" LOC = P7;
+NET "W" LOC = P38;
+NET "X" LOC = P36;
+NET "Y" LOC = P29;
+NET "Z" LOC = P24;
