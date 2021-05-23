@@ -11,7 +11,7 @@ end compuertas;
 architecture behaviour of compuertas is
     begin
         S3 <= W or X;
-        S2 <= (W and X) or ((not X) and Y) or ((not X) and Z);
-        S1 <= (W and (not X) and (not Y) and (not Z)) or (W and X and Z) or (W and X and Y) or ((not W) and Y and Z);
-        S0 <= (W and (not Y) and (not Z)) or (W and Y and Z) or ((not W) and Y and (not Z));
+        S2 <= (W or (not X)) and (X or Y or Z);
+        S1 <= (W or Y) and ((not X) or Y or Z) and ((not W) or X or (not Z)) and ((not W) or X or (not Y)) and (W or (not Y) or Z);
+        S0 <= (W or Y) and (W or (not Z)) and (Y or (not Z)) and ((not W) or (not Y) or Z);
 end behaviour;
